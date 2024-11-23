@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { HiMenu, HiX, HiSearch, HiShoppingCart } from 'react-icons/hi';
-// import { ModeToggle } from './ModeToggle';
+import { HiMenu, HiX } from 'react-icons/hi';
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,30 +17,8 @@ const Navbar: React.FC = () => {
                     <div className="text-xl font-bold">Logo</div>
                     <div className="cursor-pointer">Products</div>
                 </div>
-                <div className="flex items-center justify-center flex-grow mx-4 relative">
-                    <div className="relative w-full max-w-md">
-                        <input 
-                            type="text" 
-                            placeholder="Search for products..." 
-                            className="border rounded-md p-2 pr-10 w-full transition-all duration-200 ease-in-out" 
-                            style={{ 
-                                borderColor: 'rgba(255, 255, 255, 0.3)', 
-                                backgroundColor: 'var(--input)', 
-                                borderWidth: '1px' 
-                            }} 
-                            onFocus={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.7)'}
-                            onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
-                            // onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.3)'}
-                        />
-                        <HiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-                    </div>
-                </div>
                 <div className="flex items-center space-x-4">
-                    {/* <ModeToggle /> */}
-                    <button className="relative">
-                        <HiShoppingCart className="text-xl" />
-                        <span className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full px-1 text-xs">3</span>
-                    </button>
+                    <button className="py-2 px-4 bg-blue-500 text-white rounded-md">Sign Up</button>
                 </div>
             </div>
 
@@ -64,34 +41,15 @@ const Navbar: React.FC = () => {
                     style={{ backgroundColor: 'var(--drawer-background)', color: 'var(--drawer-foreground)', zIndex: 1100 }} // Higher z-index
                 >
                     <div className="flex flex-col items-center p-4">
-                        <div className="relative mb-4 w-full">
-                            <input 
-                                type="text" 
-                                placeholder="Search" 
-                                className="border rounded-md p-2 pr-10 w-full transition-all duration-200 ease-in-out" 
-                                style={{ 
-                                    borderColor: 'rgba(0, 0, 0, 0.3)', 
-                                    backgroundColor: 'var(--input)', 
-                                    borderWidth: '1px' 
-                                }} 
-                                onFocus={(e) => e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.7)'} 
-                                onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.3)'} 
-                            />
-                            <HiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-                        </div>
                         <div className="cursor-pointer py-2">Products</div>
                         <div className="cursor-pointer py-2">Sign Up</div>
                     </div>
                 </div>
             </div>
 
-            {/* Icons in their original positions */}
+            {/* Mobile "Sign Up" button */}
             <div className="flex items-center space-x-4 md:hidden">
-                {/* <ModeToggle /> */}
-                <button className="relative">
-                    <HiShoppingCart className="text-xl" />
-                    <span className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full px-1 text-xs">3</span>
-                </button>
+                <button className="py-2 px-4 bg-green-500 text-white rounded-md">Sign Up</button>
             </div>
         </nav>
     );

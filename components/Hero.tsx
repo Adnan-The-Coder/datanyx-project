@@ -8,17 +8,17 @@ const Hero: React.FC = () => {
       {/* Left Section */}
       <div className="flex-1 flex flex-col items-start">
         <h1 className="text-4xl md:text-5xl font-bold mb-2" style={{ color: 'var(--primary-foreground)' }}>
-          Think, Build, Repeat!
+          Analyzing Data, Protecting Animals !
         </h1>
         <p className="text-lg mb-4 text-muted-foreground">
-          Shop the latest tech solutions with just a click and elevate your productivity.Revolutionize Your Work with Our Cutting-Edge Tech Solutions
+          Solving the age-related complications in animals giving best analysis of data and predicting !
         </p>
         <div className="flex gap-4 mb-2"> {/* Reduced margin-bottom */}
           <button className="bg-primary text-primary-foreground py-3 px-5 rounded-lg shadow hover:shadow-lg transition duration-300 text-lg">
-            Shop Now
+            Analyse and Protect Now !
           </button>
           <button className="border border-primary text-primary py-3 px-5 rounded-lg shadow hover:shadow-lg transition duration-300 text-lg">
-            Explore
+            Learn More
           </button>
         </div>
       </div>

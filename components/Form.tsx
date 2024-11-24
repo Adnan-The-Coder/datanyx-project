@@ -23,7 +23,6 @@ import {
     CommandItem,
     CommandList,
   } from "@/components/ui/Command"
-import { IconDeviceIpadX } from "@tabler/icons-react";
 
   const symptoms = [
     "Abdominal Pain",

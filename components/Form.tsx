@@ -229,7 +229,8 @@ const LabelInputContainer = ({
 export function ComboboxDemo() {
     const [open, setOpen] = React.useState(false);
     const [value, setValue] = React.useState("");
-    const [symptomSelected,setsymptomSelected] = useState([]);
+    // const [symptomSelected,setsymptomSelected] = useState([]);
+    const [symptomSelected,setsymptomSelected] = useState<string[]>([]);
 
     const handlesymptomSelection = (e:string) => {
       setsymptomSelected((prevText)=>[...prevText,e]);
